@@ -1,11 +1,11 @@
 ###Palingderome number
 number =151
-temp=0
-rem=0
+temp=number
+remainder=0
 reverse =0
 while number >0:
-    rem = number % 10 
-    reverse = (reverse *10) + rem
+    remainder = number % 10 
+    reverse = (reverse *10) + remainder
     number = number//10
 if temp == reverse:
     print("The number is Palingdrome:")
