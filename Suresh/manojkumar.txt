@@ -19,6 +19,7 @@
         <li>chess</li>
         <li>carroms</li>
         <li>Cricket</li>
+        <li>FootBall</li>
 
     </ul>
 
