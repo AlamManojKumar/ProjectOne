@@ -1,0 +1,15 @@
+# Largest number in the Array
+numbers = [10,20,30,80,100, 1000]
+largest = numbers[0]
+for num in numbers:
+    if num > largest:
+        largest = num
+print("The Largest Number" )
+
+#Sum of array
+
+total =0
+numbers = [10,20,30,40]
+for num in numbers:
+    total =total +num
+print("Sum is",total)
