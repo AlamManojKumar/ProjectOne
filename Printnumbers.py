@@ -7,4 +7,5 @@ while number <10:
 #How to print numbers using for loop
 number =0
 for number in range(1,10):
-     number= number 
+    number= number + 1
+    print(number)
