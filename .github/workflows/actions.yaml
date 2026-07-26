@@ -1,7 +1,7 @@
 name: build spring-boot
 on:
   push:
-    branches: 'main'
+    branches: 'master'
 env:
    image_name: spring-boot
    docker_org: alammanoj
@@ -19,7 +19,7 @@ jobs:
       with:
        username: DOCKERHUB_USERNAME
        password: ${{secrets.Docker_PAT}}
-       if: ${{github.ref_name=='main'}}
+       if: ${{github.ref_name=='master'}}
     - name: Build and push
       uses: docker/build-push-action@v7
       with:
