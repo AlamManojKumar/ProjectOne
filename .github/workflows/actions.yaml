@@ -12,7 +12,7 @@ env:
 jobs:
   maven_build:
     runs-on: ubuntu-latest
-    if: ${{ github.ref_name=='master' }}
+    if: ${{ github.ref_name=='main' }}
     steps:
       - name: checkout repo branch
         uses: actions/checkout@v4
