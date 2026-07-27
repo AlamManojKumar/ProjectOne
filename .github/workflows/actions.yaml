@@ -24,7 +24,7 @@ jobs:
           java-version: '17'
  
       - name: build jar with maven
-        run: ./mvnw clean package -DskipTests
+        run: mvn clean package -DskipTests
  
   build_image:
     needs: maven_build
