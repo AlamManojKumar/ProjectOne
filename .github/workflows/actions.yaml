@@ -1,8 +1,8 @@
 name: build spring-boot
 on:
   push:
-    branches:
-      - master
+    branches: '*'
+      
 
 env:
   image_name: spring-boot
@@ -12,6 +12,7 @@ env:
 jobs:
   maven_build:
     runs-on: ubuntu-latest
+    if: ${{ github.ref_name=='master' }}
     steps:
       - name: checkout repo branch
         uses: actions/checkout@v4
