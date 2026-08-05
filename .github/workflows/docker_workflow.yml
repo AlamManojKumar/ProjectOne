@@ -44,7 +44,7 @@ jobs:
           context: .
           push: true
           tags: ${{inputs.DOCKERHUB_USERNAME}}/${{inputs.dockerimage}}:${{ github.run_id }}
-      - name: Build and publish image master
+      - name: Build and publish image snapshot 
         if: ${{ github.ref_name != 'master' }}
         uses: docker/build-push-action@v4
         with:
