@@ -34,9 +34,10 @@ jobs:
         run: mvn clean package -DskipTests
       - name: SonarQube Analysis
         run: >
-         mvn sonar:sonar
+         mvn org.sonarsource.scanner.maven:sonar-maven-plugin:sonar
          -Dsonar.projectKey=ccaabe4cf6b27e79f53fc31b846ca18c2158420c
          -Dsonar.organization=alammanojkumar
+         -Dsonar.host.url=https://sonarcloud.io
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
       - name: Install the docker 
